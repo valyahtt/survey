@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!-- 1 THE HEADER  -->
+  <head>
+    <meta charset="utf-8">
+    <title>Tribute page</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+<!-- 2 - THE BODY -->
+  <!-- Title -->
+  <body>
+    
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey</h1>
+        <p id="description">This is a survey</p>
+      </header>
+      <!-- Input questions -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>          
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>          
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="age">Age (optional)</label>          
+          <input type="number" name="age" id="number" class="form-control" placeholder="Enter your Age" Min=0 Max=99>
+        </div>
+        <!-- Dropdown question -->
+        <div class="form-group">
+          <p>Dropdown question?</p>
+          <select id="dropdown" name="" class="form-control" required>
+            <option disabled selected value>Choose an option</option>
+            <option value="option1">Option one</option>
+            <option value="option2">Option two</option>
+            <option value="option3">Option three</option>
+            <option value="option4">Option four</option>
+          </select>
+        </div>
+        <!-- Radio question -->
+        <div class=form-group>
+          <p>Radio question?</p>
+          <label>
+            <input name="radio-question" value="Radio-one" type="radio" class="input-radio" checked>
+            "Radio one"
+          </label>
+          <label>
+            <input name="radio-question" value="Radio-two" type="radio" class="input-radio" checked>
+            "Radio two"
+          </label>
+          <label>
+            <input name="radio-question" value="Radio-three" type="radio" class="input-radio" checked>
+            "Radio three"
+          </label>        
+        </div>
+        <!-- Checkbox question -->
+        <div class=form-group>
+          <p>Checkbox question?</p>
+          <label>
+            <input name="checkbox-question" value="Check-one" type="checkbox" class="input-checkbox">
+            "Check one"
+          </label>
+          <label>
+            <input name="checkbox-question" value="Check-two" type="checkbox" class="input-checkbox">
+            "Check two"
+          </label>
+          <label>
+            <input name="checkbox-question" value="Check-three" type="checkbox" class="input-checkbox">
+            "Check three"
+          </label>
+        </div>
+        <!-- Additionnal comments -->
+        <div class=form-group>
+          <p>Any comment?</p>
+          <textarea id="comments" name="comment" placeholder="Enter your comment here..." class="form-control" ></textarea>
+        </div>
+        <!-- Submit button -->
+        <div class=form-group>
+          <button type="submit" id="submit" >Submit</button>
+        </div>     
+      </form> 
+    </div>
+  </body>
+</html>
+    
